@@ -1,4 +1,3 @@
-import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -6,7 +5,7 @@ import { greeting } from "../../portfolio";
 import { Slide } from "react-awesome-reveal";
 import FeelingProud from "./FeelingProud";
 
-export default function Greeting({theme}) {
+const Greeting = ({theme}) => {
   return (
     <Slide direction="up" duration={2000} delay={500} triggerOnce >
       <div className="greet-main" id="greeting">
@@ -40,10 +39,16 @@ export default function Greeting({theme}) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+                            <img
+											src={require(`../../assests/images/001.jpg`)}
+											alt=""
+										/>
+            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>
     </Slide>
   );
 }
+
+export default Greeting

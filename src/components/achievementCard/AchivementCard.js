@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function AchivementCard({ cardInfo }) {
+const AchivementCard =  ({cardInfo})  => {
   function openUrlInNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
@@ -17,9 +15,11 @@ export default function AchivementCard({ cardInfo }) {
       </div>
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
-          return <p onClick={() => openUrlInNewTab(v.url)}>{v.name}</p>;
+          return <p key={i} onClick={() => openUrlInNewTab(v.url)}>{v.name}</p>;
         })}
       </div>
     </div>
   );
 }
+
+export default AchivementCard

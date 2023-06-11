@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-
-class FeelingProud extends Component {
-  render() {
-    const theme = this.props.theme;
+const FeelingProud = ({theme}) => {
     return (
       <svg
         id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
@@ -349,6 +345,6 @@ class FeelingProud extends Component {
       </svg>
     );
   }
-}
+
 
 export default FeelingProud;

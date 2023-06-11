@@ -14,7 +14,7 @@ const GetSkillSvg = (props) => {
   return <DesignImg theme={props.theme} />;
 };
 
-const SkillSection = theme => {
+const SkillSection = ({theme}) => {
   return (
     <div>
       {skills.data.map((skill, index) => {

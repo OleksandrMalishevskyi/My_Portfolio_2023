@@ -8,7 +8,7 @@ import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-awesome-reveal";
 
-const Education = ({ theme }) => {
+const Education =  ({theme})  => {
   return (
     <div className="education-main">
       <Header theme={theme} />

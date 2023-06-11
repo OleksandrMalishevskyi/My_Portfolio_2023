@@ -1,5 +1,6 @@
-import React from "react";
 import "./TopButton.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const TopButton = ({ theme }) => {
   function GoUpEvent() {
@@ -22,28 +23,28 @@ const TopButton = ({ theme }) => {
     scrollFunction();
   };
 
-  const onMouseEnter = (color, bgColor) => {
+  const onMouseEnter = () => {
     /* For the button */
     const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
+    topButton.style.color = theme.body;
+    topButton.style.backgroundColor = theme.text;
 
     /* For arrow icon */
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
+    arrow.style.color = theme.body;
+    arrow.style.backgroundColor = theme.text;
   };
 
-  const onMouseLeave = (color, bgColor) => {
+  const onMouseLeave = () => {
     /* For the button */
     const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
+    topButton.style.color = theme.text;
+    topButton.style.backgroundColor = theme.body;
 
     /* For arrow icon */
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
+    arrow.style.color = theme.text;
+    arrow.style.backgroundColor = theme.body;
   };
 
   return (
@@ -56,12 +57,12 @@ const TopButton = ({ theme }) => {
         border: `solid 1px ${theme.text}`,
       }}
       title="Go up"
-      onMouseEnter={() => onMouseEnter(theme.text, theme.body)}
-      onMouseLeave={() => onMouseLeave(theme.body, theme.text)}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
-      <i className="fas fa-arrow-up" id="arrow" aria-hidden="true" />
+      <FontAwesomeIcon icon={faArrowUp} id="arrow" />
     </div>
   );
-}
+};
 
-export default TopButton
+export default TopButton;

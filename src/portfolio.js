@@ -21,9 +21,9 @@ const seo = {
 const greeting = {
   title: "Oleksandr Malishevskyi",
   logo_name: "Oleksandr Malishevskiy",
-  nickname: "Типа никнейма",
+  nickname: "Oleksand Malishevskyi TechnoTiger",
   subTitle:
-    "Бла бла бля... ой... ну короче про себя",
+    "I am curently FullStack JavaScript Developer",
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
   portfolio_repository: "https://github.com/OleksandrMalishevskyi/My_Portfolio_2023/tree/main",
@@ -255,9 +255,9 @@ const degrees = {
       alt_name: "CNTU",
       duration: "2016 - 2018",
       descriptions: [
-        "⚡ Bla ",
-        "⚡ Bla ",
-        "⚡ bla/....",
+        "⚡ I studied Discrete Mathematics, Computer arithmetics, Structures and algorithms of data processing, programming, System programming in Win32 and .Net, Java and C# technologies of applied programming, Large integrated circuits of microprocessors and programmable logic, Computer calculations, Software Engineering, Scripting programming languages,",
+        "⚡ Object-oriented programming, System programming, System software, Organisation of databases, Parallel and distributed computing, Algorithms and computing methods, Computer graphics, Technologies of desing of computer systems, Computer Networks, Telecommunication systems and technologies,Programming in C++, IP telephony, Programming mobile device,",
+        "⚡ Theory of probablity and mathematical statistics, Architecture of computers, Physical bases of electrical engineering, Pattern recognition, Digital processing and transmission of information, Protection of information in computer systems, Administration of operating systems,Programmin of Web interfaces, Object-Oriented Analysis and desing and other",
       ],
       website_link: "https://stu.cn.ua/",
     },
@@ -272,7 +272,7 @@ const degrees = {
         "⚡ Bla ",
         "⚡ bla/....",
       ],
-      website_link: "https://www.indiana.edu/",
+      website_link: "https://szkolamedicus.com/",
     },
   ],
 };

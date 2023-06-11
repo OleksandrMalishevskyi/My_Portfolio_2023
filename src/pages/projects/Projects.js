@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
@@ -16,9 +15,7 @@ import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
-class Projects extends Component {
-  render() {
-    const theme = this.props.theme;
+const Projects = ({theme}) => {
     return (
       <div className="projects-main">
         <Header theme={theme} />
@@ -87,16 +84,15 @@ class Projects extends Component {
         ) : null}
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
+          {publications.data.map((pub, index) => {
+            return <PublicationCard key={index} pub={pub} theme={theme} />;
           })}
         </div>
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }
-}
 
 export default Projects;
