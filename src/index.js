@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import "./assests/font-awesome/css/all.css";
+// import "./assests/font-awesome/css/all.css";
 
 // import { BaseProvider, LightTheme } from "baseui";
 // import { Provider as StyletronProvider } from "styletron-react";
