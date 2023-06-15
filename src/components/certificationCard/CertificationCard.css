@@ -1,19 +1,18 @@
 .cert-card {
-  width: 30%;
-  display: inline-block;
-  justify-content: center;
+  width: 30%; /* Ширина колонки */
+  margin-bottom: 30px; /* Отступ между колонками */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   border: 1px solid #d9dbdf;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #d9dbdf;
-  margin-bottom: 30px;
-  flex: 0 0 30%;
 }
 
 .cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .logo_img {

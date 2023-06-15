@@ -1,18 +1,8 @@
 import "./Header.css";
 import { Fade } from "react-awesome-reveal";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link,} from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
-import SeoHeader from "../seoHeader/SeoHeader";
-
-const onMouseEnter = (event, color) => {
-  const el = event.target;
-  el.style.backgroundColor = color;
-};
-
-const onMouseOut = (event) => {
-  const el = event.target;
-  el.style.backgroundColor = "transparent";
-};
+// import SeoHeader from "../seoHeader/SeoHeader";
 
 const Header = ({ theme }) => {
   const link = settings.isSplash ? "/splash" : "home";
@@ -27,7 +17,7 @@ const Header = ({ theme }) => {
 
   return (
     <Fade direction="down" duration={1500} delay={0} triggerOnce>
-      <SeoHeader />
+      {/* <SeoHeader /> */}
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
@@ -48,8 +38,12 @@ const Header = ({ theme }) => {
                   to={navLink.to}
                   tag={Link}
                   style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onMouseEnter={(event) =>
+                    (event.target.style.backgroundColor = theme.highlight)
+                  }
+                  onMouseOut={(event) =>
+                    (event.target.style.backgroundColor = "transparent")
+                  }
                 >
                   {navLink.label}
                 </NavLink>

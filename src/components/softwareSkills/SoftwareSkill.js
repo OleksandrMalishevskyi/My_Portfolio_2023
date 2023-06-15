@@ -1,46 +1,42 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-const SoftwareSkill = (props) => {
+const SoftwareSkill = ({ logos }) => {
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {props.logos.map((logo, index) => {
+          {logos.map((logo, index) => {
             return (
-              <OverlayTrigger
+              <li
                 key={index}
-                placement={"top"}
-                overlay={
-                  <Tooltip id={`tooltip-top`}>
-                    <strong>{logo.skillName}</strong>
-                  </Tooltip>
-                }
+                className="software-skill-inline"
+                name={logo.skillName}
               >
-                <li
-                  key={index}
-                  className="software-skill-inline"
-                  name={logo.skillName}
-                >
-                  {logo.fontAwesomeClassname && (
-                    <span
-                      className="iconify"
-                      data-icon={logo.fontAwesomeClassname}
-                      style={logo.style}
-                      data-inline="false"
-                    ></span>
-                  )}
-                  {!logo.fontAwesomeClassname && logo.imageSrc && (
-                    <img
-                      className="skill-image"
-                      style={logo.style}
-                      src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
-                      alt={logo.skillName}
-                    />
-                  )}
-                </li>
-              </OverlayTrigger>
+                {logo.fontAwesomeClassname && (
+                  <span
+                    className="iconify"
+                    data-icon={logo.fontAwesomeClassname}
+                    style={logo.style}
+                    data-inline="false"
+                  ></span>
+                )}
+                {!logo.fontAwesomeClassname && logo.imageSrc && (
+                  <img
+                    className="skill-image"
+                    style={logo.style}
+                    src={`${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`}
+                    alt={logo.skillName}
+                  />
+                )}
+                {logo.iconifyClass && (
+                  <Icon
+                    icon={logo.iconifyClass}
+                    style={logo.style}
+                  />
+                )}
+              </li>
             );
           })}
         </ul>

@@ -3,7 +3,8 @@ import { Fade } from "react-awesome-reveal";
 
 const CertificationCard = ({theme, certificate}) => {
     return (
-      <Fade bottom duration={2000} distance="20px">
+      <div className="cert-card-container">
+      <Fade direction="down" duration={2000} delay={500} triggerOnce>
         <div className="cert-card">
           <div className="content">
             <a
@@ -42,6 +43,7 @@ const CertificationCard = ({theme, certificate}) => {
           </div>
         </div>
       </Fade>
+      </div>
     );
   }
 

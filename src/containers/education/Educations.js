@@ -3,7 +3,8 @@ import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 
-const Educations = theme => {
+const Educations = ({theme}) => {
+  console.log(degrees);
   return (
     <div className="main" id="educations">
       <div className="educations-header-div">

@@ -3,7 +3,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Slide } from "react-awesome-reveal";
-import FeelingProud from "./FeelingProud";
 
 const Greeting = ({theme}) => {
   return (

@@ -4,7 +4,7 @@ import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 
@@ -12,74 +12,74 @@ const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 
-const Contact = (props) => {
+const Contact = ({theme}) => {
 
     return (
       <div className="contact-main">
-        <Header theme={props.theme} />
+        <Header theme={theme} />
         <div className="basic-contact">
             <div className="contact-heading-div">
-            <Slide direction="left" duration={1500} delay={0} triggerOnce>
+            <Fade direction="left" duration={1500} delay={0} triggerOnce>
               <div className="contact-heading-img-div">
                 <img
                   src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                   alt=""
                 />
               </div>
-              </Slide>
-              <Slide direction="right" duration={1500} delay={0} triggerOnce>
+              </Fade>
+              <Fade direction="right" duration={1500} delay={0} triggerOnce>
               <div className="contact-heading-text-div">
                 <h1
                   className="contact-heading-text"
-                  style={{ color: props.theme.text }}
+                  style={{ color: theme.text }}
                 >
                   {ContactData["title"]}
                 </h1>
                 <p
                   className="contact-header-detail-text subTitle"
-                  style={{ color: props.theme.secondaryText }}
+                  style={{ color: theme.secondaryText }}
                 >
                   {ContactData["description"]}
                 </p>
-                <SocialMedia theme={props.theme} />
+                <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
                   <Button
                     text="See My Resume"
                     newTab={true}
                     href={greeting.resumeLink}
-                    theme={props.theme}
+                    theme={theme}
                   />
                 </div>
               </div>
-              </Slide>
+              </Fade>
             </div>
           
 
-          <Slide direction="down" duration={1500} delay={0} triggerOnce>
+          <Fade direction="down" duration={1500} delay={0} triggerOnce>
             <div className="address-heading-div">
 
               <div className="address-heading-text-div">
                 <h1
                   className="address-heading-text"
-                  style={{ color: props.theme.text }}
+                  style={{ color: theme.text }}
                 >
                   {addressSection["title"]}
                 </h1>
                 <p
                   className="contact-header-detail-text subTitle"
-                  style={{ color: props.theme.secondaryText }}
+                  style={{ color: theme.secondaryText }}
                 >
                   {addressSection["subtitle"]}
                 </p>
                 <h1
                   className="address-heading-text"
-                  style={{ color: props.theme.text }}
+                  style={{ color: theme.text }}
                 >
                   {phoneSection["title"]}
                 </h1>
                 <p
                   className="contact-header-detail-text subTitle"
-                  style={{ color: props.theme.secondaryText }}
+                  style={{ color: theme.secondaryText }}
                 >
                   {phoneSection["subtitle"]}
                 </p>
@@ -88,22 +88,18 @@ const Contact = (props) => {
                     text="Visit on Google Maps"
                     newTab={true}
                     href={addressSection.location_map_link}
-                    theme={props.theme}
+                    theme={theme}
                   />
                 </div>
               </div>
               <div className="contact-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <AddressImg theme={props.theme} />
+                <AddressImg theme={theme} />
               </div>
             </div>
-          </Slide>
+          </Fade>
         </div>
-        <Footer theme={props.theme} onToggle={props.onToggle} />
-        <TopButton theme={props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }

@@ -1,10 +1,11 @@
-import "./DegreeCard.css";
+import "./ExperienceCard.css";
 import { Fade, Flip } from "react-awesome-reveal";
 
-const DegreeCard = ({degree, theme}) => {
-  return (
-    <div className="degree-card">
-      {degree.logo_path && (
+const ExperienceCard = ({work, theme}) => {
+  console.log(work)
+    return (
+      <div className="experience-card">    
+      {work.logo_path && (
         <Flip direction="horizontal" delay={300}>
           <div className="card-img">
             <img
@@ -13,16 +14,16 @@ const DegreeCard = ({degree, theme}) => {
                 maxHeight: "100%",
                 transform: "scale(0.9)",
               }}
-              src={require(`../../assests/images/${degree.logo_path}`)}
-              alt={degree.alt_name}
+              src={require(`../../assests/images/${work.logo_path}`)}
+              alt={work.alt_name}
             />
           </div>
         </Flip>
       )}
-      <Fade duration={2000} delay={1500} direction="right" triggerOnce>
+      <Fade duration={1500} delay={500} direction="right" triggerOnce>
         <div
           className="card-body"
-          style={{ width: degree.logo_path ? "90%" : "100%" }}
+          style={{ width: work.logo_path ? "90%" : "100%" }}
         >
           <div
             className="body-header"
@@ -30,51 +31,40 @@ const DegreeCard = ({degree, theme}) => {
           >
             <div className="body-header-title">
               <h2 className="card-title" style={{ color: theme.text }}>
-                {degree.title}
+                {work.title}
               </h2>
               <h3 className="card-subtitle" style={{ color: theme.text }}>
-                {degree.subtitle}
+                {work.company}
               </h3>
             </div>
             <div className="body-header-duration">
               <h3 className="duration" style={{ color: theme.text }}>
-                {degree.duration}
+                {work.duration}
+              </h3>
+              <h3 className="duration" style={{ color: theme.text }}>
+                {work.location}
               </h3>
             </div>
           </div>
           <div className="body-content">
-            {degree.descriptions.map((sentence, index) => {
+            {work.descriptions.map((exp, index) => {
               return (
                 <p
                   key={index}
                   className="content-list"
                   style={{ color: theme.text }}
                 >
-                  {sentence}
+                  {exp}
                 </p>
               );
             })}
-            {degree.website_link && (
-              <a
-                href={degree.website_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  className="visit-btn"
-                  style={{ backgroundColor: theme.headerColor }}
-                >
-                  <p className="btn" style={{ color: theme.text }}>
-                    Visit Website
-                  </p>
-                </div>
-              </a>
-            )}
           </div>
         </div>
       </Fade>
     </div>
-  );
-};
+     
+    );
+  }
 
-export default DegreeCard;
+
+export default ExperienceCard;

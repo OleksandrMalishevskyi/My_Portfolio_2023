@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 
-const Certifications = (theme) => {
+const Certifications = ({theme}) => {
   return (
     <div className="main" id="certs">
       <div className="certs-header-div">

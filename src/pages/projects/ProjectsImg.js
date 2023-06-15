@@ -1,14 +1,9 @@
-import React, { Component } from "react";
-
-export default class ProjectsImg extends Component {
-  render() {
-    const theme = this.props.theme;
+const ProjectsImg = ({theme}) => {
     return (
       <svg
         id="a6dc9487-50e2-4fb9-af91-bf1b7118d463"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        // xmlns:xlink="http://www.w3.org/1999/xlink"
         width="1103.79"
         height="707.8"
         viewBox="0 0 1103.79 707.8"
@@ -22,9 +17,9 @@ export default class ProjectsImg extends Component {
             y2="522.9"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="gray" stop-opacity="0.25" />
-            <stop offset="0.54" stop-color="gray" stop-opacity="0.12" />
-            <stop offset="1" stop-color="gray" stop-opacity="0.1" />
+            <stop offset="0" stopColor="gray" stopOpacity="0.25" />
+            <stop offset="0.54" stopColor="gray" stopOpacity="0.12" />
+            <stop offset="1" stopColor="gray" stopOpacity="0.1" />
           </linearGradient>
         </defs>
         <title>mind map</title>
@@ -84,7 +79,7 @@ export default class ProjectsImg extends Component {
           points="491.81 203.17 561.89 294.68 634.08 202.74"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="508.37"
@@ -109,13 +104,13 @@ export default class ProjectsImg extends Component {
           y2="138.35"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <polyline
           points="675.22 139.93 634.08 170.7 590.81 139.93"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="456.61"
@@ -151,20 +146,20 @@ export default class ProjectsImg extends Component {
           y2="430.01"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <path
           d="M609.53,558.59v0Z"
           transform="translate(-48.1 -96.1)"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <polyline
           points="462.42 493.11 561.42 462.48 660.82 492.89"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="526.62"
@@ -231,7 +226,7 @@ export default class ProjectsImg extends Component {
           y2="374.94"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="735.11"
@@ -240,7 +235,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="613.23"
@@ -249,7 +244,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="832.16"
@@ -258,7 +253,7 @@ export default class ProjectsImg extends Component {
           y2="320.21"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="732.22"
@@ -307,7 +302,7 @@ export default class ProjectsImg extends Component {
           y2="374.94"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="388.66"
@@ -316,7 +311,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="510.55"
@@ -325,7 +320,7 @@ export default class ProjectsImg extends Component {
           y2="319.78"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <line
           x1="291.61"
@@ -334,7 +329,7 @@ export default class ProjectsImg extends Component {
           y2="320.21"
           fill="none"
           stroke={theme.text}
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         />
         <rect
           x="417.76"
@@ -596,4 +591,5 @@ export default class ProjectsImg extends Component {
       </svg>
     );
   }
-}
+
+export default ProjectsImg

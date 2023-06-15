@@ -1,16 +1,10 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-awesome-reveal";
-import {
-  greeting,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-} from "../../portfolio.js";
+import { greeting, projectsHeader } from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
@@ -20,8 +14,8 @@ const Projects = ({theme}) => {
       <div className="projects-main">
         <Header theme={theme} />
         <div className="basic-projects">
-        <Fade duration={2000} direction="left" triggerOnce>
             <div className="projects-heading-div">
+            <Fade direction="right" duration={2000} delay={500} triggerOnce>
               <div className="projects-heading-img-div">
                 {/* <img
 											src={require(`../../assests/images/${projectsHeader["avatar_image_path"]}`)}
@@ -29,6 +23,8 @@ const Projects = ({theme}) => {
 										/> */}
                 <ProjectsImg theme={theme} />
               </div>
+              </Fade>
+              <Fade direction="left" duration={2000} delay={500} triggerOnce>
               <div className="projects-heading-text-div">
                 <h1
                   className="projects-heading-text"
@@ -43,12 +39,12 @@ const Projects = ({theme}) => {
                   {projectsHeader["description"]}
                 </p>
               </div>
+              </Fade>
             </div>
-          </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
+          {ProjectsData.data.map((repo, index) => {
+            return <GithubRepoCard key={index} repo={repo} theme={theme} />;
           })}
         </div>
         <Button
@@ -58,37 +54,6 @@ const Projects = ({theme}) => {
           newTab={true}
           theme={theme}
         />
-
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        ) : null}
-
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub, index) => {
-            return <PublicationCard key={index} pub={pub} theme={theme} />;
-          })}
-        </div>
-
         <Footer theme={theme} />
         <TopButton theme={theme} />
       </div>

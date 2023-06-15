@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-
-export default class ExperienceImg extends Component {
-  render() {
-    const theme = this.props.theme;
+const ExperienceImg = ({theme}) => {
     return (
       <svg
         id="bf56719a-dd30-4b09-833f-7c41eeee086b"
@@ -391,4 +387,5 @@ export default class ExperienceImg extends Component {
       </svg>
     );
   }
-}
+
+export default ExperienceImg

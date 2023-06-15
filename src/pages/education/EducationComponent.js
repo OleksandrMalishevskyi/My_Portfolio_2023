@@ -18,6 +18,7 @@ const Education =  ({theme})  => {
             <div className="heading-img-div">
               <EducationImg theme={theme} />
             </div>
+            
             <div className="heading-text-div">
               <h1 className="heading-text" style={{ color: theme.text }}>
                 Education
