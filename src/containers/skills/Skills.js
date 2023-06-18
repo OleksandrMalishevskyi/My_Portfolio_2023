@@ -7,7 +7,7 @@ const Skills = ({theme}) => {
   return (
     <div className="main" id="skills">
       <div className="skills-header-div">
-        <Fade direction="left" duration={1500} delay={0} triggerOnce>
+        <Fade direction="left" duration={2000} delay={500} triggerOnce>
           <h1 className="skills-header" style={{ color: theme.text }}>
             What I Do?
           </h1>

@@ -2,7 +2,6 @@ import "./ExperienceCard.css";
 import { Fade, Flip } from "react-awesome-reveal";
 
 const ExperienceCard = ({work, theme}) => {
-  console.log(work)
     return (
       <div className="experience-card">    
       {work.logo_path && (

@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.projects-heading-div > * {
+.projects-heading-div>* {
   flex: 1;
 }
 
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.projects-heading-img-div > * {
+.projects-heading-img-div>* {
   max-width: 100%;
   height: auto;
 }
@@ -40,13 +40,6 @@
   margin-top: 80px;
 }
 
-.projects-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .projects-header-detail-text {
   font-size: 20px;
   line-height: 30px;
@@ -55,16 +48,9 @@
   margin-right: 20px;
   font-family: "Google Sans Medium";
 }
-.publications-heading-text-div {
-  text-align: center;
-  font-family: "Google Sans Regular";
-  margin-top: 70px;
-}
 
-.publications-heading-text {
-  font-size: 56px;
-  font-weight: 600;
-}
+
+
 .repo-cards-div-main {
   display: flex;
   flex-direction: row;
@@ -75,25 +61,28 @@
   margin-top: 60px;
 }
 
-@media (max-width: 1380px) {
-  .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .projects-heading-sub-text {
-    font-size: 25px;
+
+
+@media (min-width: 1380px) {
+  .repo-cards-div-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 
-@media (max-width: 768px) {
-  .projects-heading-text,
-  .publications-heading-text {
+@media (max-width: 1380px) and (min-width: 961px) {
+  .repo-cards-div-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .projects-heading-text {
     font-size: 30px;
     margin-top: 20px;
-  }
-
-  .projects-heading-sub-text {
-    font-size: 20px;
   }
 
   .projects-heading-div {
@@ -109,9 +98,19 @@
   }
 
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .repo-cards-div-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }

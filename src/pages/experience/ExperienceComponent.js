@@ -1,10 +1,8 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-
 import Experience from "../../containers/experience/Experience";
 import ExperienceImg from "./ExperienceImg";
-import { experience } from "../../portfolio.js";
 import "./Experience.css";
 import { Fade } from "react-awesome-reveal";
 
