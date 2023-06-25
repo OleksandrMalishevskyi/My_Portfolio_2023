@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Splash.css";
+import "./SplashPage.css";
 import LoaderLogo from "../../components/Loader/LoaderLogo.js";
 
-const Splash = ({theme}) => {
+const SplashPage = ({theme}) => {
   const [redirect, setRedirect] = useState(false);
   const navigate = useNavigate();
 
@@ -30,4 +30,4 @@ const Splash = ({theme}) => {
   );
 };
 
-export default Splash;
+export default SplashPage;

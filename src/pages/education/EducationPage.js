@@ -3,12 +3,11 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
-import EducationImg from "./EducationImg";
 import { certifications } from "../../portfolio";
-import "./EducationComponent.css";
+import "./EducationPage.css";
 import { Fade } from "react-awesome-reveal";
 
-const Education =  ({theme})  => {
+const EducationPage = ({ theme }) => {
   return (
     <div className="education-main">
       <Header theme={theme} />
@@ -16,9 +15,9 @@ const Education =  ({theme})  => {
         <Fade direction="left" duration={2000} delay={500} triggerOnce>
           <div className="heading-div">
             <div className="heading-img-div">
-              <EducationImg theme={theme} />
+              <img src={require(`../../assests/images/Education.png`)} alt="" />
             </div>
-            
+
             <div className="heading-text-div">
               <h1 className="heading-text" style={{ color: theme.text }}>
                 Education
@@ -40,4 +39,4 @@ const Education =  ({theme})  => {
   );
 };
 
-export default Education;
+export default EducationPage;

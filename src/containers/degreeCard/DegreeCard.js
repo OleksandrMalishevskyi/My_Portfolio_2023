@@ -1,7 +1,7 @@
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-awesome-reveal";
 
-const DegreeCard = ({degree, theme}) => {
+const DegreeCard = ({ degree, theme }) => {
   return (
     <div className="degree-card">
       {degree.logo_path && (

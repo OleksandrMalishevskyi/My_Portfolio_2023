@@ -3,13 +3,11 @@ import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-awesome-reveal";
-import { greeting, projectsHeader } from "../../portfolio.js";
-import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+import { greeting, projectsHeader, projectcards } from "../../portfolio.js";
+import "./ProjectsPage.css";
 import ProjectCard from "../../containers/projectCard/ProjectCard";
-import projectcards from "../../containers/projectCard/ProjectCardData";
 
-const Projects = ({ theme }) => {
+const ProjectsPage = ({ theme }) => {
   return (
     <div className="projects-main">
       <Header theme={theme} />
@@ -17,7 +15,7 @@ const Projects = ({ theme }) => {
         <div className="projects-heading-div">
           <Fade direction="right" duration={2000} delay={500} triggerOnce>
             <div className="projects-heading-img-div">
-              <ProjectsImg theme={theme} />
+              <img src={require(`../../assests/images/Projects.png`)} alt="" />
             </div>
           </Fade>
           <Fade direction="left" duration={2000} delay={500} triggerOnce>
@@ -38,7 +36,7 @@ const Projects = ({ theme }) => {
           </Fade>
         </div>
       </div>
-      <div className="repo-cards-div-main">
+      <div className="projectcards-div-main">
         {projectcards.data.map((project, index) => (
           <ProjectCard
             theme={theme}
@@ -66,4 +64,4 @@ const Projects = ({ theme }) => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;

@@ -14,7 +14,7 @@ const SoftwareSkill = ({ logos }) => {
                 className="software-skill-inline"
                 name={logo.skillName}
               >
-                <ProjectLanguages logos={[logo]} /> {/* Заменяем код значков на компонент ProjectLanguages */}
+                <ProjectLanguages logos={[logo]} /> 
               </li>
             );
           })}

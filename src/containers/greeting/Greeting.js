@@ -2,11 +2,11 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
-const Greeting = ({theme}) => {
+const Greeting = ({ theme }) => {
   return (
-    <Slide direction="up" duration={2000} delay={500} triggerOnce >
+    <Fade direction="up" duration={2000} delay={500} triggerOnce>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -38,16 +38,12 @@ const Greeting = ({theme}) => {
             </div>
           </div>
           <div className="greeting-image-div">
-                            <img
-											src={require(`../../assests/images/001.jpg`)}
-											alt=""
-										/>
-            {/* <FeelingProud theme={theme} /> */}
+            <img src={require(`../../assests/images/001.jpg`)} alt="" />
           </div>
         </div>
       </div>
-    </Slide>
+    </Fade>
   );
-}
+};
 
-export default Greeting
+export default Greeting;

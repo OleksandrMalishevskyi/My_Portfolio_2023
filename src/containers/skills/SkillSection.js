@@ -2,19 +2,18 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
-import FullStackImg from "./FullStackImg";
-import CloudInfraImg from "./CloudInfraImg";
-import DesignImg from "./DesignImg";
 
-const GetSkillSvg = ({fileName, theme}) => {
+const GetSkillSvg = ({ fileName }) => {
   if (fileName === "FullStackImg")
-    return <FullStackImg theme={theme} />;
+    return (
+      <img src={require(`../../assests/images/web-development.png`)} alt="" />
+    );
   else if (fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={theme} />;
-  return <DesignImg theme={theme} />;
+    return <img src={require(`../../assests/images/CloudInfra.png`)} alt="" />;
+  return <img src={require(`../../assests/images/UI_UX Design.png`)} alt="" />;
 };
 
-const SkillSection = ({theme}) => {
+const SkillSection = ({ theme }) => {
   return (
     <div>
       {skills.data.map((skill, index) => {
@@ -39,10 +38,10 @@ const SkillSection = ({theme}) => {
 
               <Fade direction="right" duration={2000} delay={1000} triggerOnce>
                 <div>
-                {skill.skills.map((skillSentence, skillIndex) => {
+                  {skill.skills.map((skillSentence, skillIndex) => {
                     return (
                       <p
-                      key={`skill-${index}-${skillIndex}`}
+                        key={`skill-${index}-${skillIndex}`}
                         className="subTitle skills-text"
                         style={{ color: theme.secondaryText }}
                       >

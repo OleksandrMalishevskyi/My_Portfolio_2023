@@ -1,8 +1,3 @@
-.projects-main {
-  width: 100%;
-  text-align: center;
-}
-
 .basic-projects {
   margin-left: 5%;
   margin-right: 5%;
@@ -51,7 +46,7 @@
 
 
 
-.repo-cards-div-main {
+.projectcards-div-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -59,12 +54,13 @@
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 60px;
+  
 }
 
 
 
 @media (min-width: 1380px) {
-  .repo-cards-div-main {
+  .projectcards-div-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -72,7 +68,7 @@
 }
 
 @media (max-width: 1380px) and (min-width: 961px) {
-  .repo-cards-div-main {
+  .projectcards-div-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -97,7 +93,7 @@
     text-align: center;
   }
 
-  .repo-cards-div-main {
+  .projectcards-div-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -108,7 +104,7 @@
 }
 
 @media (max-width: 576px) {
-  .repo-cards-div-main {
+  .projectcards-div-main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;

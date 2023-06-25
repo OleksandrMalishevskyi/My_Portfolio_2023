@@ -16,7 +16,7 @@
 
 .software-skill-inline-languages.rotate-icon .iconify {
   animation: rotate 1s linear infinite;
-  transform-style: preserve-3d; /* Сохраняем 3D трансформации */
+  transform-style: preserve-3d; 
 }
 
 .software-skill-inline-languages.animating .iconify {
@@ -25,7 +25,7 @@
 
 @keyframes rotate {
   100% {
-    transform: rotateY(360deg); /* Вращение вокруг оси Y */
+    transform: rotateY(360deg); 
   }
 }
 

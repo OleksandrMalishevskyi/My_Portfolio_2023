@@ -1,22 +1,23 @@
 
 import { useRoutes } from "react-router-dom";
-import Home from "../pages/home/HomeComponent";
-import Splash from "../pages/splash/Splash";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/ExperienceComponent";
-import Contact from "../pages/contact/ContactComponent";
-import Projects from "../pages/projects/Projects";
+import HomePage from "../pages/home/HomePage";
+import SplashPage from "../pages/splash/SplashPage";
+import EducationPage from "../pages/education/EducationPage";
+import ExperiencePage from "../pages/experience/ExperiencePage";
+import ContactPage from "../pages/contact/ContactPage";
+import ProjectsPage from "../pages/projects/ProjectsPage";
 import Error404 from "../pages/errors/error404/Error";
+
 
 const Main = ({theme}) => {
   const routeResult = useRoutes([
-    { path: "/", element: <Splash theme={theme} /> },
-    { path: "/home", element: <Home theme={theme} /> },
-    { path: "/experience", element: <Experience theme={theme} /> },
-    { path: "/education", element: <Education theme={theme} /> },
-    { path: "/contact", element: <Contact theme={theme} /> },
-    { path: "/splash", element: <Splash theme={theme} /> },
-    { path: "/projects", element: <Projects theme={theme} /> },
+    { path: "/", element: <SplashPage theme={theme} /> },
+    { path: "/home", element: <HomePage theme={theme} /> },
+    { path: "/experience", element: <ExperiencePage theme={theme} /> },
+    { path: "/education", element: <EducationPage theme={theme} /> },
+    { path: "/contact", element: <ContactPage theme={theme} /> },
+    { path: "/splash", element: <SplashPage theme={theme} /> },
+    { path: "/projects", element: <ProjectsPage theme={theme} /> },
     { path: "*", element: <Error404 theme={theme} /> },
   ]);
 

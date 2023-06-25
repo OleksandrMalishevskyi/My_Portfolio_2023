@@ -4,7 +4,7 @@ import Skills from "../../containers/skills/Skills";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 
-const Home =  ({theme})  => {
+const HomePage =  ({theme})  => {
   return (
     <div>
       <Header theme={theme} />
@@ -16,4 +16,4 @@ const Home =  ({theme})  => {
   );
 };
 
-export default Home;
+export default HomePage;

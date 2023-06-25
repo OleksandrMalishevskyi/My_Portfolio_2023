@@ -7,7 +7,6 @@
   width: max-content;
   padding: 13px 22px;
   margin-right: 0px;
-  /* text-transform: uppercase; */
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
@@ -19,8 +18,6 @@
   letter-spacing: 2px;
 }
 .main-button:hover {
-  /* background-color: #ffffff; */
-  /* color: black; */
   transition: ease-in 0.3s;
 }
 .project-button {
@@ -28,7 +25,7 @@
   justify-content: center;
   margin-top: 20px;
 }
-/* Media Query */
+
 @media (max-width: 768px) {
   .main-button {
     font-size: 15px;

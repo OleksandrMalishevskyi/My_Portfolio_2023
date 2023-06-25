@@ -34,7 +34,6 @@ const socialMediaLinks = [
   // github: "https://github.com/OleksandrMalishevskyi",
   // linkedin: "https://www.linkedin.com/in/oleksandr-malishevskyi-technotiger/",
   // gmail: "oleksandr.malishevskiy@gmail.com",
-  // gitlab: "https://gitlab.com/.....",
   // facebook: "https://www.facebook.com/.../",
   // instagram: "https://www.instagram.com/..../"
 
@@ -82,39 +81,20 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Client-side development (Frontend):  Creating the user interfaces and web applications that users interact with.",
+        "⚡ Server-side development (Backend): Creating and maintaining the server side of web applications. Using the Node.js programming language",
+        "⚡ Management and Deployment: Management and deployment of web applications. Setting up a server environment, managing configuration, and deploying applications to a hosted or cloud platform.",
       ],
       languages: [
-        {
-          iconifyClass: "logos:html-5",
-        },
-        {
-          iconifyClass: "logos:css-3",
-        },
-        {
-          iconifyClass: "skill-icons:sass",
-        },
-        {
-          iconifyClass: "logos:javascript",
-        },
-        {
-          iconifyClass: "devicon:react-wordmark",
-        },
-        {
-          iconifyClass: "devicon:angularjs",
-        },
-        {
-          iconifyClass: "logos:nodejs",
-        },
-        {
-          iconifyClass: "skill-icons:redux",
-        },
-        {
-          iconifyClass: "devicon:redis-wordmark",
-        },
-
+        { iconifyClass: "logos:html-5" },
+        { iconifyClass: "logos:css-3" },
+        { iconifyClass: "skill-icons:sass" },
+        { iconifyClass: "logos:javascript" },
+        { iconifyClass: "devicon:react-wordmark" },
+        { iconifyClass: "devicon:angularjs" },
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:redis-wordmark" },
       ],
     },
     {
@@ -127,24 +107,12 @@ const skills = {
         "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
       ],
       languages: [
-        {
-          iconifyClass: "devicon:googlecloud",
-        },
-        {
-          iconifyClass: "simple-icons:amazonaws",
-        },
-        {
-          iconifyClass: "simple-icons:firebase",
-        },
-        {
-          iconifyClass: "simple-icons:postgresql",
-        },
-        {
-          iconifyClass: "simple-icons:mongodb",
-        },
-        {
-          iconifyClass: "simple-icons:docker",
-        },
+        { iconifyClass: "devicon:googlecloud" },
+        { iconifyClass: "skill-icons:aws-light" },
+        { iconifyClass: "logos:firebase" },
+        { iconifyClass: "devicon:postgresql-wordmark" },
+        { iconifyClass: "devicon:mongodb-wordmark" },
+        { iconifyClass: "devicon:docker-wordmark" },
       ],
     },
     {
@@ -156,18 +124,10 @@ const skills = {
         "⚡ Creating the flow of application functionalities to optimize user experience",
       ],
       languages: [
-        {
-          iconifyClass: "simple-icons:adobexd",
-        },
-        {
-          iconifyClass: "simple-icons:figma",
-        },
-        {
-          iconifyClass: "simple-icons:adobeillustrator",
-        },
-        {
-          iconifyClass: "simple-icons:inkscape",
-        },
+        { iconifyClass: "simple-icons:adobexd" },
+        { iconifyClass: "devicon:figma" },
+        { iconifyClass: "skill-icons:illustrator" },
+        { iconifyClass: "devicon:inkscape" },
       ],
     },
   ],
@@ -223,13 +183,28 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
-      alt_name: "GCP",
-      color_code: "#4285F499",
+      title: "Web developer 2021",
+      subtitle: "- React.js course",
+      logo_path: "udemy-icon.svg",
+      certificate_link: "https://google.com/",
+      alt_name: "React",
+      color_code: "#ffffffff",
+    },
+    {
+      title: "MERN eComerce",
+      subtitle: "- MongoDB Express React Node",
+      logo_path: "udemy-icon.svg",
+      certificate_link: "https://google.com/",
+      alt_name: "MERN",
+      color_code: "#ffffffff",
+    },
+    {
+      title: "Cisco Networking Academy",
+      subtitle: "CCNA Routing and Switching",
+      logo_path: "cisco.svg",
+      certificate_link: "https://google.com/",
+      alt_name: "CCNA",
+      color_code: "#ffffffff",
     },
   ],
 };
@@ -309,8 +284,89 @@ const projectsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
-
-
+const projectcards = {
+  data: [
+    {
+      title: "LucianBrit_Cat-E-Shop",
+      description: "E-comerce shop for cats, Fullstack project maked with React Node MongoBD and other technologies",
+      videoId: "BonX-tNfQS8",
+      githubLink:
+        "https://github.com/OleksandrMalishevskyi/LucianBrit_Cat-E-Shop",
+      renderLink: "https://cats-e-shop.onrender.com/",
+      technologies: [
+        { iconifyClass: "logos:html-5" },
+        { iconifyClass: "logos:css-3" },
+        { iconifyClass: "logos:javascript" },
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "devicon:express" },
+        { iconifyClass: "skill-icons:react-dark" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:mongodb-wordmark" },
+      ],
+    },
+    {
+      title: "Portfolio project",
+      description: "my portfolio projekt",
+      videoId: "UybcMnYCK_U",
+      githubLink: "link_GitHub",
+      renderLink: "link_render",
+      technologies: [
+        { iconifyClass: "logos:html-5" },
+        { iconifyClass: "logos:css-3" },
+        { iconifyClass: "skill-icons:sass" },
+        { iconifyClass: "logos:javascript" },
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:redis-wordmark" },
+      ],
+    },
+    {
+      title: "Portfolio project",
+      description: "my portfolio projekt",
+      videoId: "UybcMnYCK_U",
+      githubLink: "link_GitHub",
+      renderLink: "link_render",
+      technologies: [
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:redis-wordmark" },
+      ],
+    },
+    {
+      title: "Portfolio project",
+      description: "my portfolio projekt",
+      videoId: "UybcMnYCK_U",
+      githubLink: "link_GitHub",
+      renderLink: "link_render",
+      technologies: [
+        { iconifyClass: "logos:html-5" },
+        { iconifyClass: "logos:css-3" },
+        { iconifyClass: "skill-icons:sass" },
+        { iconifyClass: "logos:javascript" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:redis-wordmark" },
+      ],
+    },
+    {
+      title: "Portfolio project",
+      description: "my portfolio projekt",
+      videoId: "UybcMnYCK_U",
+      githubLink: "link_GitHub",
+      renderLink: "link_render",
+      technologies: [
+        { iconifyClass: "logos:html-5" },
+        { iconifyClass: "logos:css-3" },
+        { iconifyClass: "skill-icons:sass" },
+        { iconifyClass: "logos:javascript" },
+        { iconifyClass: "devicon:react-wordmark" },
+        { iconifyClass: "devicon:angularjs" },
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "skill-icons:redux" },
+        { iconifyClass: "devicon:redis-wordmark" },
+      ],
+    },
+  ],
+};
 
 // Contact Page
 const contactPageData = {
@@ -349,5 +405,6 @@ export {
   certifications,
   works,
   projectsHeader,
+  projectcards,
   contactPageData,
 };

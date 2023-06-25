@@ -1,7 +1,7 @@
 import "./Certifications.css";
 import { Fade } from "react-awesome-reveal";
 import { certifications } from "../../portfolio";
-import CertificationCard from "../../components/certificationCard/CertificationCard";
+import CertificationCard from "../../containers/certificationCard/CertificationCard";
 
 const Certifications = ({theme}) => {
   return (
@@ -14,9 +14,13 @@ const Certifications = ({theme}) => {
         </Fade>
       </div>
       <div className="certs-body-div">
-        {certifications.certifications.map((cert, index) => {
-          return <CertificationCard key={index} certificate={cert} theme={theme} />;
-        })}
+        {certifications.certifications.map((cert, index) => (
+          <CertificationCard 
+          key={index} 
+          certificate={cert} 
+          theme={theme} 
+          />
+          ))}
       </div>
     </div>
   );

@@ -1,26 +1,26 @@
 import "./Educations.css";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+import DegreeCard from "../degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 
 const Educations = ({theme}) => {
-  console.log(degrees);
-  return (
-    <div className="main" id="educations">
-      <div className="educations-header-div">
-        <Fade direction="left" duration={1500} delay={1500} triggerOnce>
-          <h1 className="educations-header" style={{ color: theme.text }}>
-            Degrees Received
-          </h1>
-        </Fade>
+    return (
+      <div className="main" id="educations">
+        <div className="educations-header-div">
+        <Fade direction="down" duration={2000} delay={500} triggerOnce>
+            <h1 className="educations-header" style={{ color: theme.text }}>
+              Degrees Received
+            </h1>
+          </Fade>
+        </div>
+        <div className="educations-body-div">
+          {degrees.degrees.map((degree) => {
+            return <DegreeCard degree={degree} theme={theme} />;
+          })}
+        </div>
       </div>
-      <div className="educations-body-div">
-      {degrees.degrees.map((degree, index) => {
-          return <DegreeCard key={index} degree={degree} theme={theme} />;
-        })}
-      </div>
-    </div>
-  );
-};
+    );
+  }
+
 
 export default Educations;
