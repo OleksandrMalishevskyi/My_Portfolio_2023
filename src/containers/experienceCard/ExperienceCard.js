@@ -5,7 +5,7 @@ const ExperienceCard = ({work, theme}) => {
     return (
       <div className="experience-card">    
       {work.logo_path && (
-        <Flip direction="horizontal" delay={300}>
+        <Flip direction="horizontal" delay={700}>
           <div className="card-img">
             <img
               style={{
