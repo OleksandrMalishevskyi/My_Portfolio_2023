@@ -10,7 +10,7 @@ const GetSkillSvg = ({ fileName }) => {
     );
   else if (fileName === "BackEnd")
     return <img src={require(`../../assests/images/Backend_image.png`)} alt="" />;
-  return <img src={require(`../../assests/images/UI_UX Design.png`)} alt="" />;
+  return <img src={require(`../../assests/images/Backend_image.png`)} alt="" />;
 };
 
 const SkillSection = ({ theme }) => {
