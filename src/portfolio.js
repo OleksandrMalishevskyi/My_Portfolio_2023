@@ -23,7 +23,7 @@ const greeting = {
   nickname: "Oleksand Malishevskyi TechnoTiger",
   subTitle: "I am curently FullStack JavaScript Developer",
   resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "https://drive.google.com/file/d/1roo39PpzLKGc8QIg82RE7Qz4jm74F5bl/view?usp=sharing",
   portfolio_repository:
     "https://github.com/OleksandrMalishevskyi/My_Portfolio_2023/tree/main",
   githubProfile: "https://github.com/OleksandrMalishevskyi",
@@ -78,12 +78,12 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
+      title: "FrontEnd JavaScript Developer",
+      fileName: "FrontEnd",
       skills: [
-        "⚡ Client-side development (Frontend):  Creating the user interfaces and web applications that users interact with.",
-        "⚡ Server-side development (Backend): Creating and maintaining the server side of web applications. Using the Node.js programming language",
-        "⚡ Management and Deployment: Management and deployment of web applications. Setting up a server environment, managing configuration, and deploying applications to a hosted or cloud platform.",
+        "⚡ User Interface (UI) Development: Frontend JavaScript Developers focus on building the user interface of web applications. They create interactive and visually appealing web pages using technologies like HTML, CSS, and JavaScript. They ensure that the application's interface is user-friendly and responsive to different devices and screen sizes.",
+        "⚡ Client-Side Logic: They write client-side JavaScript code to handle user interactions, validate input, and communicate with the backend server. They use frontend frameworks and libraries like React, Angular, or Vue.js to develop dynamic and data-driven web applications.",
+        "⚡ Cross-Browser Compatibility and Performance: Frontend JavaScript Developers must ensure that their web applications work consistently across different web browsers and platforms. They optimize the performance of the frontend code, improving loading times and responsiveness. This includes minimizing requests, reducing code size, and using techniques like lazy loading.",
       ],
       languages: [
         { iconifyClass: "logos:html-5" },
@@ -92,19 +92,17 @@ const skills = {
         { iconifyClass: "logos:javascript" },
         { iconifyClass: "devicon:react-wordmark" },
         { iconifyClass: "devicon:angularjs" },
-        { iconifyClass: "logos:nodejs" },
         { iconifyClass: "skill-icons:redux" },
-        { iconifyClass: "devicon:redis-wordmark" },
+
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
+      title: "BackEnd JavaScript Developer",
+      fileName: "BackEnd",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Server-Side Development: Backend JavaScript Developers work on the server-side of web applications. They write server code, design APIs, and manage the data and logic of the application. They use frameworks like Node.js to build server-side applications.",
+        "⚡ Database Management: They manage and interact with databases, including creating, querying, and optimizing database structures. Backend JavaScript Developers often work with both relational (e.g., SQL databases) and NoSQL databases (e.g., MongoDB) to store and retrieve data.",
+        "⚡ ntegration and Security: They integrate the backend of the application with the frontend and third-party services. Ensuring the security of the application is another critical aspect, including implementing authentication, authorization, and protection against common security vulnerabilities.",
       ],
       languages: [
         { iconifyClass: "devicon:googlecloud" },
@@ -113,24 +111,11 @@ const skills = {
         { iconifyClass: "devicon:postgresql-wordmark" },
         { iconifyClass: "devicon:mongodb-wordmark" },
         { iconifyClass: "devicon:docker-wordmark" },
+        { iconifyClass: "logos:nodejs" },
+        { iconifyClass: "devicon:redis-wordmark" },
       ],
     },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
       ],
-      languages: [
-        { iconifyClass: "simple-icons:adobexd" },
-        { iconifyClass: "devicon:figma" },
-        { iconifyClass: "skill-icons:illustrator" },
-        { iconifyClass: "devicon:inkscape" },
-      ],
-    },
-  ],
 };
 
 // Education Page
@@ -288,7 +273,8 @@ const projectcards = {
   data: [
     {
       title: "LucianBrit_Cat-E-Shop",
-      description: "E-comerce shop for cats, Fullstack project maked with React Node MongoBD and other technologies",
+      description:
+        "E-comerce shop for cats, Fullstack project maked with React, Node, MongoBD and other technologies",
       videoId: "BonX-tNfQS8",
       githubLink:
         "https://github.com/OleksandrMalishevskyi/LucianBrit_Cat-E-Shop",
@@ -304,20 +290,22 @@ const projectcards = {
         { iconifyClass: "devicon:mongodb-wordmark" },
       ],
     },
-    {
-      title: "Portfolio project",
-      description: "my portfolio projekt",
-      videoId: "UybcMnYCK_U",
-      githubLink: "link_GitHub",
-      renderLink: "link_render",
+{
+      title: "LucianBrit_Cat-E-Shop",
+      description:
+        "An application for managing a restaurant or cafe, Fullstack project maked with Angular, Node, MongoBD and other technologies",
+      videoId: "SH-wAtEUXMw",
+      githubLink:
+        "https://github.com/OleksandrMalishevskyi/RestoranApp_CatsCaffee",
+      renderLink: "https://cats-e-shop.onrender.com/",
       technologies: [
         { iconifyClass: "logos:html-5" },
         { iconifyClass: "logos:css-3" },
-        { iconifyClass: "skill-icons:sass" },
         { iconifyClass: "logos:javascript" },
         { iconifyClass: "logos:nodejs" },
-        { iconifyClass: "skill-icons:redux" },
-        { iconifyClass: "devicon:redis-wordmark" },
+        { iconifyClass: "devicon:express" },
+        { iconifyClass: "devicon:angularjs" },
+        { iconifyClass: "devicon:mongodb-wordmark" },
       ],
     },
     {

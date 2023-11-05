@@ -4,12 +4,12 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
 
 const GetSkillSvg = ({ fileName }) => {
-  if (fileName === "FullStackImg")
+  if (fileName === "FrontEnd")
     return (
-      <img src={require(`../../assests/images/web-development.png`)} alt="" />
+      <img src={require(`../../assests/images/frontend_image.png`)} alt="" />
     );
-  else if (fileName === "CloudInfraImg")
-    return <img src={require(`../../assests/images/CloudInfra.png`)} alt="" />;
+  else if (fileName === "BackEnd")
+    return <img src={require(`../../assests/images/Backend_image.png`)} alt="" />;
   return <img src={require(`../../assests/images/UI_UX Design.png`)} alt="" />;
 };
 
